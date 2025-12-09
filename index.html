@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Camargo - Cyber</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="imagenes/equipos.jpg" alt="Logo Cyber" class="logo-img">
+                <span class="logo-text">CYBER</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ciber">Cyber</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>INTERNET CAMARGO CYBER</h2>
+            <p>Renta de equipos, reparación y venta de computadoras y los fines de semana: venta de platillos de pollo.</p>
+        
+        </div>
+    </section>
+    
+
+    <!-- Plans Section -->
+    <!-- Se eliminaron los planes de internet; ahora solo servicios del ciber -->
+
+    <!-- Services Section -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card servicio-card--pollo" data-target="#pedidos" role="link" tabindex="0">
+                    <div class="servicio-icon">🍗</div>
+                    <h3>Platillos de Pollo</h3>
+                    <p>Platillos disponibles los fines de semana: rostizado, alitas y paquetes familiares.</p>
+                </div>
+                <div class="servicio-card servicio-card--reparacion" data-target="#registro" role="link" tabindex="0">
+                    <div class="servicio-icon">🔧</div>
+                    <h3>Reparación y Venta</h3>
+                    <p>Reparación y mantenimiento de computadoras. También ofrecemos venta de equipos, componentes y accesorios con garantías.</p>
+                </div>
+                <div class="servicio-card servicio-card--ciber" data-target="#ciber" role="link" tabindex="0">
+                    <div class="servicio-icon">💻</div>
+                    <h3>Cyber</h3>
+                    <p>Renta de PC, impresión, escaneo y acceso a internet por hora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ciber Section -->
+    <section id="ciber" class="ciber">
+        <div class="container">
+            <h2 class="section-title">El Cyber</h2>
+            <div class="ciber-grid">
+                <div class="ciber-info">
+                    <div id="open-status" class="open-status" aria-live="polite"></div>
+                    <p>En Internet Camargo rentamos computadoras por hora, imprimimos documentos y ofrecemos un espacio seguro para estudiar o trabajar.</p>
+                    <ul>
+                        <li>Renta de PC y estaciones de trabajo</li>
+                        <li>Acceso a impresora y escáner</li>
+                        <li>Wi‑Fi de alta velocidad</li>
+                        <li>Soporte y reparación en sitio</li>
+                    </ul>
+                    <a href="#registro" class="btn-primary">Servicios</a>
+                </div>
+                <div class="ciber-extras">
+                    <div id="weekend-banner" class="weekend-banner" style="display:none;">
+                        <strong>Hoy hay platillos de pollo:</strong> pide al local o encárgalos para llevar los fines de semana.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales / Supplies Section (replaces Registration form) -->
+    <section id="registro" class="registro">
+        <div class="container">
+            <h2 class="section-title">Servicios de Venta</h2>
+            <p class="ventas-intro">Ofrecemos soluciones completas para impresión y equipos: recarga y venta de tóner, recarga y venta de cartuchos, y venta de equipos de cómputo. Haz clic en una opción para ver más detalles o contactarnos.</p>
+
+            <div class="ventas-grid">
+                <div class="venta-card" id="venta-toner" tabindex="0" role="button" aria-pressed="false" style="background-image: url('imagenes/toner.jpg');">
+                    <div class="venta-card-overlay"></div>
+                    <div class="venta-card-content">
+                        <h3 class="venta-title">Venta y Recarga de Tóner</h3>
+                        <p class="venta-desc">Recarga profesional de tóner para impresoras láser y venta de cartuchos originales y compatibles. Servicio rápido y garantía en recargas.</p>
+                        <button class="btn-primary venta-btn">Ver Catálogo</button>
+                    </div>
+                </div>
+
+                <div class="venta-card" id="venta-cartucho" tabindex="0" role="button" aria-pressed="false" style="background-image: url('imagenes/cartuchos.jpg');">
+                    <div class="venta-card-overlay"></div>
+                    <div class="venta-card-content">
+                        <h3 class="venta-title">Venta y Recarga de Cartuchos</h3>
+                        <p class="venta-desc">Recarga de cartuchos de tinta y venta de cartuchos originales y remanufacturados para impresoras de inyección.</p>
+                        <button class="btn-primary venta-btn">Ver Catálogo</button>
+                    </div>
+                </div>
+
+                <div class="venta-card" id="venta-equipos" tabindex="0" role="button" aria-pressed="false" style="background-image: url('imagenes/equipos.jpg');">
+                    <div class="venta-card-overlay"></div>
+                    <div class="venta-card-content">
+                        <h3 class="venta-title">Venta de Equipos de Cómputo</h3>
+                        <p class="venta-desc">Equipos de escritorio y laptops nuevas y reacondicionadas, además de componentes, monitores y accesorios.</p>
+                        <button class="btn-primary venta-btn">Ver Catálogo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#contacto" class="btn-primary" style="display: inline-block; padding: 14px 32px; font-size: 1.05rem;">Mantenimiento</a>
+            </div>
+
+            <div id="registro-mensaje" class="mensaje" aria-live="polite" style="margin-top:18px; display:none;"></div>
+        </div>
+    </section>
+    <!-- Orders Section -->
+    <section id="pedidos" class="pedidos">
+        <div class="container">
+            <h2 class="section-title">Pedidos - Platillos de Pollo</h2>
+            <div id="order-closed" class="order-closed" role="status" aria-live="polite" style="display:none;"></div>
+            <div class="pedido-grid">
+                <div class="pedido-info">
+    
+                    </ul>
+                    <!-- Menú: imagen del menú de platillos -->
+                    <div class="menu-card">
+                        <h3>Menú</h3>
+                        <a href="imagenes/pollo.jpeg" target="_blank" rel="noopener">
+                            <img class="lightbox-trigger" src="imagenes/pollo.jpeg" alt="Menú Platillos de Pollo">
+                        </a>
+                        <p class="menu-note">Haz clic en la imagen para verla a tamaño completo.</p>
+                    </div>
+                    <!-- Catálogo reducido -->
+                    <div class="catalog-grid">
+                        <div class="catalog-card">
+                            <img class="lightbox-trigger" src="imagenes/pollodes.jpg" alt="Platillo de pollo deshuesado">
+                            <div class="catalog-body">
+                                <h4>Platillo de Pollo Deshuesado</h4>
+                                <div class="catalog-price">$140.00</div>
+                                <button class="btn-primary catalog-btn" data-platillo="Platillo de Pollo Deshuesado" data-precio="140" data-cantidad="1">Pedir</button>
+                            </div>
+                        </div>
+
+                        <div class="catalog-card">
+                            <img class="lightbox-trigger" src="imagenes/sirlon.png" alt="Platillo mixteado">
+                            <div class="catalog-body">
+                                <h4>Platillo Mixteado (pollo deshuesado + sirlón)</h4>
+                                <div class="catalog-price">$200.00</div>
+                                <button class="btn-primary catalog-btn" data-platillo="Platillo Mixteado con Pollo Deshuesado y Sirlon de Res" data-precio="200" data-cantidad="1">Pedir</button>
+                            </div>
+                        </div>
+
+                        <!-- Sirlon removed per request; only keeping main chicken items -->
+                    </div>
+                </div>
+                <form id="order-form" class="order-form">
+                    <div class="form-group">
+                        <label for="order-nombre">Nombre *</label>
+                        <input type="text" id="order-nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-telefono">Teléfono *</label>
+                        <input type="tel" id="order-telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-direccion">Dirección (si aplica)</label>
+                        <input type="text" id="order-direccion" name="direccion">
+                    </div>
+                    <div class="form-group">
+                        <label for="order-platillo">Platillo *</label>
+                            <select id="order-platillo" name="platillo" required>
+                            <option value="">Selecciona un platillo</option>
+                            <option value="Platillo de Pollo Deshuesado">Platillo de Pollo Deshuesado</option>
+                            <option value="Platillo Mixteado con Pollo Deshuesado y Sirlon de Res">Platillo Mixteado con Pollo Deshuesado y Sirlon de Res</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-cantidad">Cantidad</label>
+                        <input type="number" id="order-cantidad" name="cantidad" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" id="order-precio" name="precio" value="">
+                        <div id="order-precio-display" class="catalog-price" style="margin-top:6px; font-size:0.95rem;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-extra">Extras (opcional)</label>
+                        <select id="order-extra" name="extra">
+                            <option value="">Sin extras</option>
+                            <option value="arroz">Arroz extra (+$40)</option>
+                            <option value="elote">Elote extra (+$40)</option>
+                        </select>
+                        <div id="order-extra-display" style="margin-top:6px; font-size:0.9rem; color:var(--text-muted);"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-notas">Notas / Instrucciones</label>
+                        <textarea id="order-notas" name="notas" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-tipo">Tipo de entrega</label>
+                        <select id="order-tipo" name="tipo_entrega">
+                            <option value="recoger">Recoger</option>
+                            <option value="domicilio">Domicilio</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Pedido</button>
+                </form>
+            </div>
+            <div id="order-mensaje" class="mensaje"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h3>Información de Contacto</h3>
+                    <p>📍 Camargo, Tamaulipas, México</p>
+                    <p>📞 891-974-0188</p>
+                    <p>✉️ olopez1974@hotmail.com</p>
+                    <p>🕒 Lunes a sábado: 8:00 AM - 6:00 PM</p>
+                </div>
+                <form id="contacto-form" class="contacto-form">
+                    <div class="form-group">
+                        <label for="contacto-nombre">Nombre *</label>
+                        <input type="text" id="contacto-nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contacto-telefono">Teléfono *</label>
+                        <input type="tel" id="contacto-telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contacto-email">Correo Electrónico *</label>
+                        <input type="email" id="contacto-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contacto-servicio">¿Qué servicio deseas? *</label>
+                        <select id="contacto-servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="Venta y Recarga de Tóner">Venta y Recarga de Tóner</option>
+                            <option value="Venta y Recarga de Cartuchos">Venta y Recarga de Cartuchos</option>
+                            <option value="Venta de Equipos de Cómputo">Venta de Equipos de Cómputo</option>
+                            <option value="Mantenimiento o Reparación">Mantenimiento o Reparación</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+                <div id="contacto-mensaje" class="mensaje"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌐 Internet Camargo</h3>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#ciber">Cyber</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <p><a href="https://www.facebook.com/share/1Buegy8npX/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Compartir en Facebook">Facebook</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Internet Camargo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+    <!-- Mini-catalog Modal -->
+    <div id="catalog-modal" class="catalog-modal" aria-hidden="true">
+        <div class="catalog-modal-inner" role="dialog" aria-modal="true" aria-labelledby="catalog-modal-title">
+            <button class="catalog-modal-close" aria-label="Cerrar modal">×</button>
+            <h3 id="catalog-modal-title">Catálogo</h3>
+            <div id="catalog-modal-body" class="catalog-modal-body">
+                <!-- contenido dinámico -->
+            </div>
+            <div class="catalog-modal-actions">
+                <a href="#contacto" class="btn-primary">Contactar</a>
+            </div>
+        </div>
+    </div>
+</body>
+    </html>

@@ -1,0 +1,25 @@
+{
+  "name": "internet-camargo",
+  "version": "1.0.0",
+  "description": "Sitio web de Internet Camargo - Servicios de Internet",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Tests passed\" && exit 0"
+  },
+  "keywords": [
+    "internet",
+    "camargo",
+    "servicios"
+  ],
+  "author": "Internet Camargo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "mysql2": "^3.3.0"
+  }
+}

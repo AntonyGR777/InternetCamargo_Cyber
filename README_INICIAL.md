@@ -1,0 +1,8 @@
+Resumen inicial de cambios realizados
+1ra semana
+Se creo la base de datos y se creo el repositorio, tambien se confirmaron las ideas del proyecto y quedo todo claro para empezar a trabajar con el proyecto.
+2da semana
+Se creo la estructura del proyecto y se empezo a trabajar en el frontend, se definieron los colores y la tipografia del proyecto.
+3ra semana  
+Al inicio del trabajo creé y organicé una lista de tareas para guiar el desarrollo, luego actualicé la interfaz principal del sitio para convertirla en la página de un ciber llamado “Ciber Camargo”. En `public/index.html` modifiqué el título y el logo, eliminé la sección de planes de internet y actualicé la navegación; añadí una nueva sección `Ciber` que describe la renta de equipos, impresiones y servicios en sitio, incorporé un banner que muestra cuando hay platillos de pollo los fines de semana y añadí un bloque de ejemplo con código C++ para mostrar que se puede programar aquí. En `public/css/styles.css` añadí estilos específicos para la sección del ciber, el banner y el bloque de código con aspecto oscuro y moderno. En `public/js/app.js` reemplacé la carga dinámica de planes por una población estática del select de servicios (`populateServicios()`), añadí manejo de los formularios de registro y contacto, y agregué pequeñas funciones: una para mostrar el banner los sábados y domingos y otra que anima el bloque C++ carácter por carácter. Finalmente adapté las rutas de los recursos en `public/index.html` a rutas relativas (`css/styles.css` y `js/app.js`) para poder abrir el HTML directamente con `file://` durante pruebas locales; la aplicación también funciona al ejecutarse desde el servidor con `node server.js`.
+ 
